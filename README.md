@@ -47,3 +47,43 @@ public class Bank {
 So we must to delete duplicate code. this is editBamk method because it is the same as setBank method
 
 Refernce: [Click here](http://javarevisited.blogspot.com/2012/03/10-object-oriented-design-principles.html)
+
+#Encapsulate What Change
+
+Only one thing is constant in software field and that is "Change", So encapsulate the code you expect or suspect to be changed in future. Benefit of this OOPS Design principle is that Its easy to test and maintain proper encapsulated code. If you are coding in Java then follow principle of making variable and methods private by default and increasing access step by step e.g. from private to protected and not public. Several of design pattern in Java uses Encapsulation, Factory design pattern is one example of Encapsulation which encapsulate object creation code and provides flexibility to introduce new product later with no impact on existing code.
+
+```
+package codeguide;
+/**
+ * Encapsulate what change
+ * @author Varit Assavavisidchai
+ *
+ */
+public class Employee {
+//	id card 
+	private String id;
+//	name 
+	private String name;
+//	salary
+	private double salary;
+	public Employee() {
+		this.id="";
+		this.name="";
+		this.salary=0;
+	}
+	public Employee() {
+		
+	}
+	//TODO Complete this constructor that can get the information.
+	public boolean set(double x){
+		
+	   
+	  }
+	public void get(){
+		
+	}
+	//TODO Which attribute you should set it to can change in the future.
+	//TODO complete the method that can control your attribute. 
+	
+}
+```
